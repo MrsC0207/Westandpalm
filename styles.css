@@ -20,3 +20,14 @@
 .footer{padding:52px 0}.footer .wrap{align-items:flex-start}.footer-mark{display:inline-block;width:74px;height:58px;margin-bottom:8px}.footer-mark img{display:block;width:100%;height:100%;object-fit:contain}.footer p{margin-top:8px}
 @media(max-width:900px){.nav .wrap{height:78px}.wordmark span{font-size:1.2rem}.wordmark small{font-size:.43rem;margin-top:7px}.hero{min-height:auto}.hero-grid{min-height:auto}.pagehero{padding-top:82px}}
 @media(max-width:620px){.nav .wrap{height:72px}.wordmark span{font-size:1.02rem;letter-spacing:.11em}.wordmark small{font-size:.39rem;letter-spacing:.4em;padding-left:.4em}.footer-mark{width:64px;height:50px}}
+
+/* V1.2.1 implementation fixes */
+/* True transparent artwork: no cream rectangle, no blend-mode workaround. */
+.header-logo{display:flex;align-items:center;width:205px;height:68px;text-decoration:none;overflow:visible}
+.header-logo:before{display:none!important}
+.header-logo img{display:block;width:100%;height:100%;object-fit:contain;mix-blend-mode:normal}
+/* Keep dark feature bands deliberately clean. The previous image contained ghost UI/text. */
+.intro-band{background:var(--forest)!important}
+.dark:after{display:none!important;background:none!important;content:none!important}
+@media(max-width:900px){.header-logo{width:185px;height:62px}}
+@media(max-width:620px){.header-logo{width:155px;height:56px}}
