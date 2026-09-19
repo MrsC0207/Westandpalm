@@ -7,3 +7,16 @@
 .studio-image{background:linear-gradient(rgba(32,41,35,.12),rgba(32,41,35,.12)),url('assets/hero-coastal.jpg') 50% 58%/cover no-repeat}.dark:after{background:linear-gradient(90deg,rgba(39,54,45,.98),rgba(39,54,45,.78)),url('assets/palm-dark.jpg') center/cover;opacity:1}.footer .brand-logo{width:165px;height:88px}.footer{background:#f4ede2}
 @media(max-width:900px){.nav .wrap{height:92px}.brand-logo{width:155px;height:80px}.hero{min-height:auto}.hero-grid{min-height:auto}.hero-visual{min-height:58vh}.hero-stamp{right:20px;bottom:20px}}
 @media(max-width:620px){.nav .wrap{height:82px}.brand-logo{width:135px;height:72px}.hero-copy h1{font-size:clamp(3.1rem,15vw,4.8rem)}.hero-visual{min-height:460px}.hero-stamp{width:120px}.project-shot{padding:14px}.project-shot:before{left:14px;right:14px;top:8px}}
+
+/* V1.2 brand implementation: restrained, asset-free header wordmark */
+.nav .wrap{height:82px}
+.wordmark{display:flex;flex-direction:column;align-items:center;justify-content:center;width:auto;line-height:1;text-decoration:none;color:var(--ink);padding:4px 0}
+.wordmark:before{display:none!important}
+.wordmark span{font-family:Georgia,'Times New Roman',serif;font-size:1.38rem;letter-spacing:.16em;white-space:nowrap}
+.wordmark i{font-style:normal;color:var(--sand);padding:0 .06em}
+.wordmark small{font-family:Arial,Helvetica,sans-serif;font-size:.48rem;letter-spacing:.48em;margin-top:8px;padding-left:.48em;color:var(--sand)}
+.hero{min-height:calc(100vh - 82px)}.hero-grid{min-height:calc(100vh - 82px)}
+.pagehero{padding-top:92px}
+.footer{padding:52px 0}.footer .wrap{align-items:flex-start}.footer-mark{display:inline-block;width:74px;height:58px;margin-bottom:8px}.footer-mark img{display:block;width:100%;height:100%;object-fit:contain}.footer p{margin-top:8px}
+@media(max-width:900px){.nav .wrap{height:78px}.wordmark span{font-size:1.2rem}.wordmark small{font-size:.43rem;margin-top:7px}.hero{min-height:auto}.hero-grid{min-height:auto}.pagehero{padding-top:82px}}
+@media(max-width:620px){.nav .wrap{height:72px}.wordmark span{font-size:1.02rem;letter-spacing:.11em}.wordmark small{font-size:.39rem;letter-spacing:.4em;padding-left:.4em}.footer-mark{width:64px;height:50px}}
