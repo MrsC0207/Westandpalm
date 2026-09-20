@@ -253,3 +253,13 @@
 .service-capability-list{gap:0 28px}
 .service-capability-list .foundation-item{display:grid;grid-template-columns:34px 1fr;align-items:center;gap:12px;min-height:70px;padding:12px 0}
 @media(max-width:620px){.interior-header-gap{height:14px}.service-capability-list .foundation-item{min-height:60px}}
+
+
+/* V1.8.4 micro-fixes: straight contact split, complete icons, Work marker */
+@media (min-width:901px){
+  .work-hero:before{top:auto!important;bottom:26px!important;right:3vw!important}
+  .contact-workspace{background:var(--forest)!important}
+  .contact-workspace .contact-grid{gap:0!important}
+  .contact-workspace .contact-intro{background:var(--paper);padding-right:70px!important;box-shadow:-100vw 0 0 var(--paper)}
+  .contact-workspace .project-form{padding-left:46px;padding-right:38px}
+}
