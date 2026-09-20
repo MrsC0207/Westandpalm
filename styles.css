@@ -398,3 +398,17 @@
   .footer-location-place,.footer-location-copy{white-space:normal}
   .footer-location-copy:before{display:none}
 }
+
+
+/* V1.9.7: About brand signature logo containment */
+.about-brand-signature-grid{min-width:0}
+.about-brand-signature-grid>div{min-width:0}
+.about-brand-logo{min-width:0;overflow:visible!important;padding:32px 34px!important}
+.about-brand-logo img{display:block!important;width:auto!important;max-width:min(100%,460px)!important;height:auto!important;max-height:190px!important;object-fit:contain!important;object-position:center!important}
+@media(max-width:900px){
+  .about-brand-logo{justify-content:flex-start!important;padding:22px 0!important}
+  .about-brand-logo img{max-width:min(88vw,430px)!important;max-height:none!important}
+}
+@media(max-width:620px){
+  .about-brand-logo img{max-width:100%!important}
+}
