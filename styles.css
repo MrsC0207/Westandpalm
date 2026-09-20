@@ -263,3 +263,26 @@
   .contact-workspace .contact-intro{background:var(--paper);padding-right:70px!important;box-shadow:-100vw 0 0 var(--paper)}
   .contact-workspace .project-form{padding-left:46px;padding-right:38px}
 }
+
+/* V1.8.5 Work hero vertical balance */
+@media (min-width:901px){
+  .pagehero.editorial-hero.work-hero>.wrap{transform:translateY(42px)}
+  .work-hero:before{bottom:34px!important}
+}
+
+
+/* V1.8.6 collected polish: nav order, Process ghost word, lighter Contact composition */
+@media (min-width:901px){
+  .process-hero{position:relative!important}
+  .process-hero:after{content:'PROCESS'!important;display:block!important;position:absolute!important;right:-.025em!important;bottom:-.30em!important;font:400 clamp(10rem,20vw,20rem)/1 Georgia,'Times New Roman',serif!important;color:rgba(32,41,35,.04)!important;pointer-events:none!important;z-index:1!important}
+
+  /* Return Contact to the light page canvas and let the form be the dark focal panel. */
+  .contact-workspace{background:var(--paper)!important;overflow:visible!important}
+  .contact-workspace .contact-grid{grid-template-columns:.8fr 1.2fr!important;gap:70px!important;align-items:start!important}
+  .contact-workspace .contact-intro{background:transparent!important;padding-right:22px!important;box-shadow:none!important}
+  .contact-workspace .project-form{background:var(--forest)!important;padding:38px!important;border:1px solid rgba(255,255,255,.12)!important}
+}
+@media (max-width:900px){
+  .contact-workspace{background:var(--paper)!important}
+  .contact-workspace .contact-intro{background:transparent!important;box-shadow:none!important}
+}
