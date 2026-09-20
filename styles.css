@@ -441,3 +441,20 @@
 @media(max-width:1100px) and (min-width:901px){.header-logo{width:175px;height:64px}}
 @media(max-width:900px){.header-logo{width:195px;height:68px}}
 @media(max-width:620px){.header-logo{width:165px;height:58px}}
+
+/* Homepage V2.2 spacing + capability polish */
+.section{padding:82px 0}
+.intro-band{padding:82px 0}
+.capability-strip{padding-top:78px;padding-bottom:72px}
+.pricing-teaser{padding-top:78px;padding-bottom:78px}
+.dark{padding-top:78px;padding-bottom:78px}
+.line-icon svg{width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
+.studio-image{background-image:linear-gradient(rgba(32,41,35,.06),rgba(32,41,35,.06)),url('assets/sarah-cullen.png');background-position:50% 27%;background-size:cover;background-repeat:no-repeat}
+@media (min-width:901px) and (max-width:1180px){
+  .section{padding:72px 0}
+  .intro-band{padding:72px 0}
+  .capability-strip{padding:68px 0 64px}
+  .pricing-teaser{padding:68px 0}
+  .dark{padding:66px 0}
+}
+@media(max-width:620px){.section{padding:64px 0}.intro-band,.capability-strip,.pricing-teaser,.dark{padding:64px 0}}
