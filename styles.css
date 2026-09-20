@@ -434,3 +434,10 @@
 .project-location{margin:-2px 0 14px;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:#7a7f78}.work.work-three{grid-template-columns:repeat(3,1fr)}.work-three .project-copy{padding:25px 26px 30px}.work-three .project-copy h3{font-size:1.8rem}.project-shot.project-placeholder{display:grid;place-items:center;background:linear-gradient(135deg,#d9cfbf,#f5efe5);padding:24px}.project-placeholder-card{width:88%;aspect-ratio:16/10;background:#fff;box-shadow:0 15px 32px rgba(32,41,35,.18);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;border-top:10px solid #f6f2ea}.project-placeholder-card strong{font:400 2rem Georgia,serif;color:var(--forest)}.project-placeholder-card span{margin-top:8px;font-size:.66rem;letter-spacing:.15em;text-transform:uppercase;color:var(--sand)}
 .client-voices{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:38px}.client-voice{margin:0;padding:32px;background:var(--paper);border:1px solid var(--line);box-shadow:0 12px 32px rgba(32,41,35,.05)}.client-voice p{font:italic 400 1.17rem/1.55 Georgia,serif;margin:0 0 24px}.client-voice footer{font-size:.74rem;letter-spacing:.11em;text-transform:uppercase;color:#747970}.testimonial-note{font-size:.72rem;color:#7b8079;margin-top:22px}.international-line{margin-top:26px;font:italic 400 1.08rem Georgia,serif;color:var(--sand)}
 @media(max-width:900px){.work.work-three,.client-voices{grid-template-columns:1fr}.work-three .project{display:grid;grid-template-columns:.9fr 1.1fr}.work-three .project-shot{aspect-ratio:auto;min-height:300px}}@media(max-width:620px){.work-three .project{display:block}.work-three .project-shot{aspect-ratio:16/10;min-height:0}.client-voice{padding:26px}}
+
+/* Candidate V2.1: logo refinements */
+.header-logo{width:225px;height:76px}
+.hero-stamp img{width:82px;mix-blend-mode:normal}
+@media(max-width:1100px) and (min-width:901px){.header-logo{width:175px;height:64px}}
+@media(max-width:900px){.header-logo{width:195px;height:68px}}
+@media(max-width:620px){.header-logo{width:165px;height:58px}}
