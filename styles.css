@@ -333,3 +333,8 @@
 .footer-bottom{display:block!important;border-top:1px solid var(--line);margin-top:24px;padding-top:13px;color:#747970}
 .footer-utility{display:none!important}
 @media(max-width:620px){.footer{padding:28px 0 15px}.footer .footer-main{grid-template-columns:1fr;gap:24px}.footer-location{justify-self:start}.footer-brand-lockup{gap:16px}.footer-mark{width:76px;height:60px}.footer-bottom{margin-top:22px}}
+
+/* v1.9.0 — footer typographic balance */
+.footer-location p{margin:0}
+.footer-location p::first-line{font-family:Georgia,"Times New Roman",serif;font-size:1.22rem;line-height:1.25;color:var(--ink)}
+.footer-location{font-size:.9rem;line-height:1.55;color:#59615b}
