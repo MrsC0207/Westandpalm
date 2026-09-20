@@ -365,3 +365,11 @@
 .footer-location p.footer-location-subtitle{margin:5px 0 0!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.84rem!important;font-weight:400!important;line-height:1.4!important;color:#7b817c!important}
 @media(min-width:901px){.footer .footer-main{grid-template-columns:1fr auto!important}.footer-location{justify-self:end!important}}
 @media(max-width:620px){.footer-location{justify-self:start!important;margin-top:0!important}}
+
+
+/* V1.9.5 — simplified footer: brand lockup only, location moved to utility row */
+.footer .footer-main{display:block!important}
+.footer-brand{max-width:max-content}
+.footer-bottom{display:flex!important;justify-content:space-between!important;align-items:center!important;gap:28px!important}
+.footer-location-line{font-family:Arial,Helvetica,sans-serif;font-size:.76rem;font-weight:400;color:#7b817c;letter-spacing:.01em;text-align:right}
+@media(max-width:620px){.footer-bottom{display:flex!important;flex-direction:column;align-items:flex-start!important;gap:7px!important}.footer-location-line{text-align:left;font-size:.74rem}}
