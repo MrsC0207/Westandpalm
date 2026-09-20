@@ -412,3 +412,19 @@
 @media(max-width:620px){
   .about-brand-logo img{max-width:100%!important}
 }
+
+/* V1.9.8: About brand signature — use complete lockup and restore visual presence */
+.about-brand-signature{padding:72px 0!important}
+.about-brand-signature-grid{grid-template-columns:.92fr 1.08fr!important;gap:64px!important}
+.about-brand-logo{overflow:visible!important;padding:18px 0!important;justify-content:center!important}
+.about-brand-logo img{width:min(100%,560px)!important;max-width:560px!important;max-height:none!important;height:auto!important;object-fit:contain!important}
+@media(max-width:900px){
+  .about-brand-signature{padding:62px 0!important}
+  .about-brand-signature-grid{grid-template-columns:1fr!important;gap:28px!important}
+  .about-brand-logo{justify-content:flex-start!important;padding:10px 0 0!important}
+  .about-brand-logo img{width:min(100%,520px)!important;max-width:520px!important}
+}
+@media(max-width:620px){
+  .about-brand-signature{padding:52px 0!important}
+  .about-brand-logo img{width:100%!important;max-width:100%!important}
+}
