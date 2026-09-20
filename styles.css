@@ -247,3 +247,9 @@
   .addon-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:620px){.addon-grid{grid-template-columns:1fr}.brand-hosting-grid article{min-height:0}}
+
+/* V1.8.3 micro-polish: consistent capability icons + pricing header breathing room */
+.interior-header-gap{height:20px;background:var(--paper);border-bottom:1px solid rgba(181,142,88,.08)}
+.service-capability-list{gap:0 28px}
+.service-capability-list .foundation-item{display:grid;grid-template-columns:34px 1fr;align-items:center;gap:12px;min-height:70px;padding:12px 0}
+@media(max-width:620px){.interior-header-gap{height:14px}.service-capability-list .foundation-item{min-height:60px}}
