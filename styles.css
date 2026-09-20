@@ -458,3 +458,31 @@
   .dark{padding:66px 0}
 }
 @media(max-width:620px){.section{padding:64px 0}.intro-band,.capability-strip,.pricing-teaser,.dark{padding:64px 0}}
+
+/* Homepage V2.3: final spacing balance + studio image correction */
+.studio-image{
+  background-image:linear-gradient(rgba(32,41,35,.08),rgba(32,41,35,.08)),url('assets/palm-dark.jpg');
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+.process-preview{padding-top:62px}
+.testimonial-section{padding-top:62px}
+@media(min-width:901px){
+  .intro-band,.dark{
+    height:500px;
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    padding-top:0;
+    padding-bottom:0;
+  }
+  .intro-band>.wrap,.dark>.wrap{width:min(1220px,calc(100% - 44px))}
+}
+@media(min-width:901px) and (max-width:1180px){
+  .intro-band,.dark{height:460px;min-height:460px;padding-top:0;padding-bottom:0}
+  .process-preview,.testimonial-section{padding-top:54px}
+}
+@media(max-width:620px){
+  .process-preview,.testimonial-section{padding-top:52px}
+}
