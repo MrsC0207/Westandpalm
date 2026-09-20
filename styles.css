@@ -342,3 +342,10 @@
 /* v1.9.1 — explicit footer location typography (Safari-safe) */
 .footer-location p.footer-location-title{margin:0!important;font-family:Georgia,"Times New Roman",serif!important;font-size:1.22rem!important;font-weight:400!important;line-height:1.25!important;color:var(--ink)!important}
 .footer-location p.footer-location-subtitle{margin:7px 0 0!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.9rem!important;font-weight:400!important;line-height:1.45!important;color:#59615b!important}
+
+/* v1.9.2 footer location hierarchy */
+.footer-location{justify-self:end;text-align:left;min-width:300px}
+.footer-location p.footer-location-eyebrow{margin:0 0 10px!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.72rem!important;font-weight:600!important;line-height:1.2!important;letter-spacing:.22em!important;text-transform:uppercase!important;color:#b48a4a!important}
+.footer-location p.footer-location-title{margin:0!important;font-family:Georgia,"Times New Roman",serif!important;font-size:1.65rem!important;font-weight:400!important;line-height:1.15!important;color:var(--ink)!important}
+.footer-location p.footer-location-subtitle{margin:9px 0 0!important;font-family:Arial,Helvetica,sans-serif!important;font-size:.88rem!important;font-weight:400!important;line-height:1.45!important;color:#737971!important}
+@media(max-width:620px){.footer-location{min-width:0;justify-self:start}}
