@@ -208,3 +208,42 @@
 .icon-devices:after{left:4px;top:11px;width:9px;height:12px;border:1.5px solid currentColor;background:var(--paper)}
 .icon-launch:before{left:9px;top:6px;width:12px;height:18px;border:1.5px solid currentColor;border-radius:50% 50% 45% 45%;transform:rotate(35deg)}.icon-launch:after{left:7px;bottom:5px;width:8px;height:8px;border-left:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(-10deg)}
 @media(max-width:620px){.inclusions .foundation-item{min-height:60px}.foundation-icon{width:28px;height:28px}}
+
+/* V1.8.2 cleanup + brand/hosting pass */
+/* Work is the master interior hero: keep every secondary hero to the same compact canvas. */
+@media (min-width:901px){
+  .pagehero.editorial-hero{height:420px!important;min-height:420px!important;max-height:420px!important;padding:0!important;overflow:hidden}
+  .pagehero.editorial-hero>.wrap{height:100%!important;min-height:420px!important}
+  .pagehero.editorial-hero .hero-editorial-grid,
+  .pagehero.editorial-hero .hero-editorial-copy{height:100%!important;min-height:420px!important}
+  .pagehero.editorial-hero .hero-editorial-copy{padding-top:54px!important;padding-bottom:50px!important}
+  .pagehero.editorial-hero.work-hero>.wrap{padding-top:0!important;padding-bottom:0!important;justify-content:center}
+  .pagehero.editorial-hero:not(.work-hero):before{top:34px}
+  .contact-hero .contact-art{display:none!important}
+  .contact-hero:before{content:'WP  ·  HELLO'!important;white-space:pre;letter-spacing:.18em!important}
+}
+/* Give pricing sections a deliberate rhythm, not a missing-section-sized gap. */
+.comparison-section{padding-bottom:68px}
+.inclusions{padding-top:68px}
+/* Package cards use one language: ticks for inclusions, icons for explanatory sections only. */
+.package-card li.foundation-item{display:list-item!important;padding:7px 0 7px 22px!important;min-height:0!important}
+.package-card li.foundation-item .foundation-icon{display:none!important}
+/* Contact: ivory left, forest right running cleanly to the viewport edge. */
+.contact-workspace{position:relative;overflow:hidden;background:linear-gradient(90deg,var(--paper) 0 45%,var(--forest) 45% 100%)}
+.contact-workspace .contact-grid{position:relative}
+.contact-workspace .contact-intro{padding-right:22px}
+.project-form{border:0;box-shadow:none;align-self:stretch}
+/* Brand + hosting service cards */
+.brand-hosting-section{background:var(--cream)}
+.brand-hosting-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:42px}
+.brand-hosting-grid article{background:var(--paper);border:1px solid var(--line);padding:34px;min-height:330px}
+.brand-hosting-grid h3{font-size:1.7rem}.brand-hosting-grid p{margin-bottom:26px}
+.addon-grid{grid-template-columns:repeat(3,1fr);row-gap:0}
+.addon-grid>div{border-bottom:1px solid var(--line);padding-top:30px}
+@media(max-width:900px){
+  .contact-workspace{background:var(--paper)}
+  .project-form{margin-left:0;margin-right:0}
+  .brand-hosting-grid{grid-template-columns:1fr}
+  .addon-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){.addon-grid{grid-template-columns:1fr}.brand-hosting-grid article{min-height:0}}
