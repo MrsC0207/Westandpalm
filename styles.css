@@ -486,3 +486,18 @@
 @media(max-width:620px){
   .process-preview,.testimonial-section{padding-top:52px}
 }
+
+
+/* Homepage V2.3.1: approved shorter green bookends + selected window image */
+.studio-image{
+  background-image:linear-gradient(rgba(32,41,35,.06),rgba(32,41,35,.06)),url('assets/studio-window.jpg');
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+@media(min-width:901px){
+  .intro-band,.dark{height:410px;min-height:410px;padding-top:0;padding-bottom:0}
+}
+@media(min-width:901px) and (max-width:1180px){
+  .intro-band,.dark{height:390px;min-height:390px;padding-top:0;padding-bottom:0}
+}
