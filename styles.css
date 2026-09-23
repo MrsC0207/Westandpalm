@@ -590,3 +590,6 @@
   .page-pricing .comparison-section{padding-bottom:32px}
   .page-pricing .inclusions{padding-top:32px;padding-bottom:48px}
 }
+
+/* V9: Pricing hero separation only. Keep restored hero geometry untouched. */
+.page-pricing .packages-section{background:#ded4c5!important}
