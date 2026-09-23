@@ -501,3 +501,168 @@
 @media(min-width:901px) and (max-width:1180px){
   .intro-band,.dark{height:390px;min-height:390px;padding-top:0;padding-bottom:0}
 }
+
+/* Launch fixes: Work CTA clearance + production enquiry form */
+.work-final-cta{padding-top:92px;padding-bottom:96px}
+.work-final-cta .quote{margin-bottom:.28em}
+.work-final-cta .btn{margin-top:18px}
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:620px){.work-final-cta{padding-top:70px;padding-bottom:78px}.work-final-cta .btn{margin-top:14px}}
+
+
+/* Launch candidate V2: final desktop spacing corrections */
+@media(min-width:901px){
+  .dark{height:auto;min-height:0;padding-top:68px;padding-bottom:72px}
+  .work-final-cta{height:auto;min-height:0;padding-top:68px;padding-bottom:72px}
+  .services-brand-tight{padding-top:42px;padding-bottom:68px}
+  .services-brand-tight .services-head{margin-bottom:8px}
+  .services-brand-tight .brand-hosting-grid{margin-top:28px}
+}
+
+
+/* Launch candidate V3: surgical desktop rhythm pass */
+@media(min-width:901px){
+  /* Give the brand more authority without increasing the navigation bar. */
+  .header-logo{width:270px;height:76px}
+
+  /* Interior heroes: content-led, with enough room for the editorial type. */
+  .pagehero.editorial-hero{height:auto!important;max-height:none!important;min-height:620px!important;overflow:hidden!important;padding:0!important}
+  .pagehero.editorial-hero>.wrap{height:auto!important;min-height:620px!important}
+  .pagehero.editorial-hero:not(.work-hero) .hero-editorial-grid,
+  .pagehero.editorial-hero:not(.work-hero) .hero-editorial-copy{height:auto!important;min-height:620px!important}
+  .pagehero.editorial-hero .hero-editorial-copy{padding-top:92px!important;padding-bottom:86px!important}
+  .pagehero.editorial-hero.work-hero>.wrap{min-height:650px!important;height:auto!important;padding-top:72px!important;padding-bottom:72px!important;transform:none!important;justify-content:center}
+
+  /* Green statement sections should read as bands, not spare hero screens. */
+  .dark{height:auto!important;min-height:0!important;padding:64px 0 68px!important}
+  .page-process .dark{padding:62px 0 66px!important}
+  .work-final-cta{height:auto!important;min-height:0!important;padding:68px 0 72px!important}
+  .case-statement{padding:64px 0!important}
+
+  /* Services: keep the hierarchy but remove the empty middle of the page. */
+  .page-services .services-core{padding-bottom:64px!important}
+  .page-services .services-secondary{padding-top:58px!important;padding-bottom:66px!important}
+  .services-brand-tight{padding-top:56px!important;padding-bottom:72px!important}
+  .services-brand-tight .brand-hosting-grid{margin-top:30px!important}
+
+  /* Pricing: stronger tonal change between the hero and package section. */
+  .page-pricing .packages-section{background:#e8dfd2!important;padding-top:78px!important}
+  .page-pricing .packages-section .package-card{background:var(--paper)}
+}
+
+/* Homepage testimonials: quiet movement rather than a conventional carousel. */
+.testimonial-section{overflow:hidden}
+.testimonial-marquee{overflow:hidden;margin-top:38px;width:100vw;position:relative;left:50%;transform:translateX(-50%)}
+.testimonial-track{display:flex;width:max-content;gap:18px;padding:0 18px 10px;animation:wp-marquee-v3 58s linear infinite}
+.testimonial-track:hover{animation-play-state:paused}
+.testimonial-track .client-voice{width:min(430px,82vw);flex:0 0 auto}
+@keyframes wp-marquee-v3{to{transform:translateX(calc(-50% - 9px))}}
+@media(prefers-reduced-motion:reduce){.testimonial-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+@media(max-width:900px){.testimonial-track{animation-duration:48s}.testimonial-track .client-voice{width:min(390px,84vw)}}
+@media(max-width:620px){.testimonial-track{animation-duration:42s}}
+
+/* V4 desktop refinement: calmer scale, content-led sections, page-specific fixes */
+@media(min-width:901px){
+  /* Services: simplify the hero and let the headline lead. */
+  .page-services .services-hero{min-height:0!important;background:linear-gradient(110deg,var(--cream) 0 82%,#e9dfd0 82% 100%)!important}
+  .page-services .services-hero>.wrap,
+  .page-services .services-hero .hero-editorial-grid,
+  .page-services .services-hero .hero-editorial-copy{min-height:500px!important;height:auto!important}
+  .page-services .services-hero .hero-editorial-copy{padding:72px 25% 68px 0!important;justify-content:center}
+  .page-services .services-hero .hero-editorial-copy h1{font-size:clamp(3.55rem,5vw,5.35rem)!important;max-width:820px}
+  .page-services .services-hero .hero-editorial-art{display:none!important}
+  .page-services .services-hero:before{content:'DESIGN  ·  TECHNOLOGY'!important;top:34px!important}
+  .page-services .services-hero:after{font-size:12rem!important;opacity:.7}
+
+  /* Process: shorter, simpler and deliberately quiet. */
+  .page-process .process-hero,
+  .page-process .process-hero>.wrap,
+  .page-process .process-hero .hero-editorial-grid,
+  .page-process .process-hero .hero-editorial-copy{min-height:500px!important;height:auto!important}
+  .page-process .process-hero .hero-editorial-copy{padding:68px 22% 64px 0!important}
+  .page-process .process-hero .hero-editorial-copy h1{font-size:clamp(3.6rem,5.2vw,5.55rem)!important}
+  .page-process .process-hero .hero-editorial-art{display:none!important}
+  .page-process .process-hero:before{content:'01 → 06'!important;top:auto!important;bottom:38px!important;right:4vw!important;color:var(--sand)!important}
+  .page-process .process-hero:after{display:none!important;content:none!important}
+
+  /* Process closing statement: strong, not full-screen. */
+  .page-process .dark{padding:70px 0 76px!important}
+  .page-process .dark .quote{font-size:clamp(2.45rem,3.55vw,3.85rem)!important;max-width:900px;line-height:1.08;margin:.18em 0 .45em}
+  .page-process .dark .btn{margin-top:8px}
+
+  /* Homepage closing CTA: content-led rather than viewport-like. */
+  .page-home .dark:last-of-type{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
+  .page-home .dark:last-of-type .quote{font-size:clamp(2.8rem,4vw,4.15rem)!important;margin:.18em 0 .28em}
+  .page-home .dark:last-of-type .btn{margin-top:14px}
+
+  /* Website Care: a purposeful dark transition. */
+  .page-services .service-care{background:var(--forest)!important;color:var(--cream)!important;padding:82px 0 88px!important}
+  .page-services .service-care .eyebrow{color:#d0b47b!important}
+  .page-services .service-care h2{color:var(--cream)!important}
+  .page-services .service-care p{color:rgba(243,237,226,.9)}
+  .page-services .service-care .text-link{color:var(--cream)!important;border-bottom-color:var(--gold)!important}
+
+  /* Work closing CTA: ensure the button remains comfortably inside the band. */
+  .work-final-cta{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
+  .work-final-cta .quote{font-size:clamp(2.6rem,3.8vw,4rem)!important}
+}
+
+/* Launch candidate V5: restore content-led interior heroes.
+   V3 introduced 620/650px desktop minimums; those made landscape tablets look like full-screen canvases.
+   Keep the V4 art direction, but let the content + responsive padding determine hero height. */
+@media(min-width:901px){
+  .pagehero.editorial-hero{
+    height:auto!important;
+    min-height:0!important;
+    max-height:none!important;
+    overflow:hidden!important;
+    padding:0!important;
+  }
+  .pagehero.editorial-hero>.wrap,
+  .pagehero.editorial-hero .hero-editorial-grid,
+  .pagehero.editorial-hero .hero-editorial-copy{
+    height:auto!important;
+    min-height:0!important;
+  }
+
+  /* Standard interior pages: spacing, rather than viewport/min-height, creates the canvas. */
+  .pagehero.editorial-hero:not(.work-hero) .hero-editorial-copy{
+    padding-top:clamp(58px,6.2vw,82px)!important;
+    padding-bottom:clamp(62px,6.5vw,88px)!important;
+  }
+
+  /* Work has no editorial grid, so its own section padding provides the same rhythm. */
+  .pagehero.editorial-hero.work-hero{
+    padding:clamp(62px,6.2vw,84px) 0 clamp(68px,6.8vw,92px)!important;
+  }
+  .pagehero.editorial-hero.work-hero>.wrap{
+    display:block!important;
+    height:auto!important;
+    min-height:0!important;
+    padding-top:0!important;
+    padding-bottom:0!important;
+    transform:none!important;
+  }
+  .work-hero:before{bottom:28px!important}
+
+  /* Preserve V4's quieter Services and Process compositions without their fixed 500px floor. */
+  .page-services .services-hero,
+  .page-services .services-hero>.wrap,
+  .page-services .services-hero .hero-editorial-grid,
+  .page-services .services-hero .hero-editorial-copy,
+  .page-process .process-hero,
+  .page-process .process-hero>.wrap,
+  .page-process .process-hero .hero-editorial-grid,
+  .page-process .process-hero .hero-editorial-copy{
+    min-height:0!important;
+    height:auto!important;
+  }
+  .page-services .services-hero .hero-editorial-copy{
+    padding-top:clamp(60px,6vw,76px)!important;
+    padding-bottom:clamp(64px,6.2vw,82px)!important;
+  }
+  .page-process .process-hero .hero-editorial-copy{
+    padding-top:clamp(60px,6vw,76px)!important;
+    padding-bottom:clamp(66px,6.5vw,86px)!important;
+  }
+}
