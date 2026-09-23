@@ -576,3 +576,17 @@
   .work-final-cta{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
   .work-final-cta .quote{font-size:clamp(2.6rem,3.8vw,4rem)!important}
 }
+
+/* V8 launch polish: tighten Pricing rhythm without touching restored hero geometry. */
+.page-pricing .comparison-section{padding-bottom:44px}
+.page-pricing .inclusions{padding-top:44px;padding-bottom:64px}
+.page-pricing .inclusions .split{align-items:start}
+.about-tech-lead{font-family:Georgia,'Times New Roman',serif;font-size:1.32rem;line-height:1.45;color:var(--forest);margin-top:24px}
+@media(max-width:900px){
+  .page-pricing .comparison-section{padding-bottom:38px}
+  .page-pricing .inclusions{padding-top:38px;padding-bottom:56px}
+}
+@media(max-width:620px){
+  .page-pricing .comparison-section{padding-bottom:32px}
+  .page-pricing .inclusions{padding-top:32px;padding-bottom:48px}
+}
