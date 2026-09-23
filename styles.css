@@ -508,3 +508,13 @@
 .work-final-cta .btn{margin-top:18px}
 .form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
 @media(max-width:620px){.work-final-cta{padding-top:70px;padding-bottom:78px}.work-final-cta .btn{margin-top:14px}}
+
+
+/* Launch candidate V2: final desktop spacing corrections */
+@media(min-width:901px){
+  .dark{height:auto;min-height:0;padding-top:68px;padding-bottom:72px}
+  .work-final-cta{height:auto;min-height:0;padding-top:68px;padding-bottom:72px}
+  .services-brand-tight{padding-top:42px;padding-bottom:68px}
+  .services-brand-tight .services-head{margin-bottom:8px}
+  .services-brand-tight .brand-hosting-grid{margin-top:28px}
+}
