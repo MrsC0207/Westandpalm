@@ -560,3 +560,49 @@
 @media(prefers-reduced-motion:reduce){.testimonial-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
 @media(max-width:900px){.testimonial-track{animation-duration:48s}.testimonial-track .client-voice{width:min(390px,84vw)}}
 @media(max-width:620px){.testimonial-track{animation-duration:42s}}
+
+/* V4 desktop refinement: calmer scale, content-led sections, page-specific fixes */
+@media(min-width:901px){
+  /* Services: simplify the hero and let the headline lead. */
+  .page-services .services-hero{min-height:0!important;background:linear-gradient(110deg,var(--cream) 0 82%,#e9dfd0 82% 100%)!important}
+  .page-services .services-hero>.wrap,
+  .page-services .services-hero .hero-editorial-grid,
+  .page-services .services-hero .hero-editorial-copy{min-height:500px!important;height:auto!important}
+  .page-services .services-hero .hero-editorial-copy{padding:72px 25% 68px 0!important;justify-content:center}
+  .page-services .services-hero .hero-editorial-copy h1{font-size:clamp(3.55rem,5vw,5.35rem)!important;max-width:820px}
+  .page-services .services-hero .hero-editorial-art{display:none!important}
+  .page-services .services-hero:before{content:'DESIGN  ·  TECHNOLOGY'!important;top:34px!important}
+  .page-services .services-hero:after{font-size:12rem!important;opacity:.7}
+
+  /* Process: shorter, simpler and deliberately quiet. */
+  .page-process .process-hero,
+  .page-process .process-hero>.wrap,
+  .page-process .process-hero .hero-editorial-grid,
+  .page-process .process-hero .hero-editorial-copy{min-height:500px!important;height:auto!important}
+  .page-process .process-hero .hero-editorial-copy{padding:68px 22% 64px 0!important}
+  .page-process .process-hero .hero-editorial-copy h1{font-size:clamp(3.6rem,5.2vw,5.55rem)!important}
+  .page-process .process-hero .hero-editorial-art{display:none!important}
+  .page-process .process-hero:before{content:'01 → 06'!important;top:auto!important;bottom:38px!important;right:4vw!important;color:var(--sand)!important}
+  .page-process .process-hero:after{display:none!important;content:none!important}
+
+  /* Process closing statement: strong, not full-screen. */
+  .page-process .dark{padding:70px 0 76px!important}
+  .page-process .dark .quote{font-size:clamp(2.45rem,3.55vw,3.85rem)!important;max-width:900px;line-height:1.08;margin:.18em 0 .45em}
+  .page-process .dark .btn{margin-top:8px}
+
+  /* Homepage closing CTA: content-led rather than viewport-like. */
+  .page-home .dark:last-of-type{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
+  .page-home .dark:last-of-type .quote{font-size:clamp(2.8rem,4vw,4.15rem)!important;margin:.18em 0 .28em}
+  .page-home .dark:last-of-type .btn{margin-top:14px}
+
+  /* Website Care: a purposeful dark transition. */
+  .page-services .service-care{background:var(--forest)!important;color:var(--cream)!important;padding:82px 0 88px!important}
+  .page-services .service-care .eyebrow{color:#d0b47b!important}
+  .page-services .service-care h2{color:var(--cream)!important}
+  .page-services .service-care p{color:rgba(243,237,226,.9)}
+  .page-services .service-care .text-link{color:var(--cream)!important;border-bottom-color:var(--gold)!important}
+
+  /* Work closing CTA: ensure the button remains comfortably inside the band. */
+  .work-final-cta{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
+  .work-final-cta .quote{font-size:clamp(2.6rem,3.8vw,4rem)!important}
+}
