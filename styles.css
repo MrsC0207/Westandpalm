@@ -501,3 +501,78 @@
 @media(min-width:901px) and (max-width:1180px){
   .intro-band,.dark{height:390px;min-height:390px;padding-top:0;padding-bottom:0}
 }
+
+/* Launch fixes: Work CTA clearance + production enquiry form */
+.work-final-cta{padding-top:92px;padding-bottom:96px}
+.work-final-cta .quote{margin-bottom:.28em}
+.work-final-cta .btn{margin-top:18px}
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:620px){.work-final-cta{padding-top:70px;padding-bottom:78px}.work-final-cta .btn{margin-top:14px}}
+
+
+/* Launch candidate V2: final desktop spacing corrections */
+@media(min-width:901px){
+  .dark{height:auto;min-height:0;padding-top:68px;padding-bottom:72px}
+  .work-final-cta{height:auto;min-height:0;padding-top:68px;padding-bottom:72px}
+  .services-brand-tight{padding-top:42px;padding-bottom:68px}
+  .services-brand-tight .services-head{margin-bottom:8px}
+  .services-brand-tight .brand-hosting-grid{margin-top:28px}
+}
+
+
+/* Launch candidate V3: surgical desktop rhythm pass */
+@media(min-width:901px){
+  /* Give the brand more authority without increasing the navigation bar. */
+  .header-logo{width:270px;height:76px}
+
+  /* Green statement sections should read as bands, not spare hero screens. */
+  .dark{height:auto!important;min-height:0!important;padding:64px 0 68px!important}
+  .page-process .dark{padding:62px 0 66px!important}
+  .work-final-cta{height:auto!important;min-height:0!important;padding:68px 0 72px!important}
+  .case-statement{padding:64px 0!important}
+
+  /* Services: keep the hierarchy but remove the empty middle of the page. */
+  .page-services .services-core{padding-bottom:64px!important}
+  .page-services .services-secondary{padding-top:58px!important;padding-bottom:66px!important}
+  .services-brand-tight{padding-top:56px!important;padding-bottom:72px!important}
+  .services-brand-tight .brand-hosting-grid{margin-top:30px!important}
+
+  /* Pricing: stronger tonal change between the hero and package section. */
+  .page-pricing .packages-section{background:#e8dfd2!important;padding-top:78px!important}
+  .page-pricing .packages-section .package-card{background:var(--paper)}
+}
+
+/* Homepage testimonials: quiet movement rather than a conventional carousel. */
+.testimonial-section{overflow:hidden}
+.testimonial-marquee{overflow:hidden;margin-top:38px;width:100vw;position:relative;left:50%;transform:translateX(-50%)}
+.testimonial-track{display:flex;width:max-content;gap:18px;padding:0 18px 10px;animation:wp-marquee-v3 58s linear infinite}
+.testimonial-track:hover{animation-play-state:paused}
+.testimonial-track .client-voice{width:min(430px,82vw);flex:0 0 auto}
+@keyframes wp-marquee-v3{to{transform:translateX(calc(-50% - 9px))}}
+@media(prefers-reduced-motion:reduce){.testimonial-track{animation:none;flex-wrap:wrap;width:auto;justify-content:center}}
+@media(max-width:900px){.testimonial-track{animation-duration:48s}.testimonial-track .client-voice{width:min(390px,84vw)}}
+@media(max-width:620px){.testimonial-track{animation-duration:42s}}
+
+/* V4 desktop refinement: calmer scale, content-led sections, page-specific fixes */
+@media(min-width:901px){
+  /* Process closing statement: strong, not full-screen. */
+  .page-process .dark{padding:70px 0 76px!important}
+  .page-process .dark .quote{font-size:clamp(2.45rem,3.55vw,3.85rem)!important;max-width:900px;line-height:1.08;margin:.18em 0 .45em}
+  .page-process .dark .btn{margin-top:8px}
+
+  /* Homepage closing CTA: content-led rather than viewport-like. */
+  .page-home .dark:last-of-type{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
+  .page-home .dark:last-of-type .quote{font-size:clamp(2.8rem,4vw,4.15rem)!important;margin:.18em 0 .28em}
+  .page-home .dark:last-of-type .btn{margin-top:14px}
+
+  /* Website Care: a purposeful dark transition. */
+  .page-services .service-care{background:var(--forest)!important;color:var(--cream)!important;padding:82px 0 88px!important}
+  .page-services .service-care .eyebrow{color:#d0b47b!important}
+  .page-services .service-care h2{color:var(--cream)!important}
+  .page-services .service-care p{color:rgba(243,237,226,.9)}
+  .page-services .service-care .text-link{color:var(--cream)!important;border-bottom-color:var(--gold)!important}
+
+  /* Work closing CTA: ensure the button remains comfortably inside the band. */
+  .work-final-cta{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
+  .work-final-cta .quote{font-size:clamp(2.6rem,3.8vw,4rem)!important}
+}
