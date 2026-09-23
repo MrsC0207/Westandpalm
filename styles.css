@@ -606,3 +606,42 @@
   .work-final-cta{padding:72px 0 82px!important;min-height:0!important;height:auto!important}
   .work-final-cta .quote{font-size:clamp(2.6rem,3.8vw,4rem)!important}
 }
+
+/* Launch candidate V5: interior hero scale + consistency */
+@media(min-width:901px){
+  /* A calmer, consistent headline scale across all interior-page heroes. */
+  .page-services .services-hero .hero-editorial-copy h1,
+  .page-process .process-hero .hero-editorial-copy h1,
+  .page-about .about-hero .hero-editorial-copy h1,
+  .page-contact .contact-hero .hero-editorial-copy h1,
+  .page-pricing .pricing-hero .hero-editorial-copy h1{
+    font-size:clamp(3rem,4.15vw,4.55rem)!important;
+    line-height:1.03!important;
+    max-width:820px!important;
+  }
+  .page-work .work-hero h1{
+    font-size:clamp(3rem,4.25vw,4.65rem)!important;
+    line-height:1.03!important;
+    max-width:1120px!important;
+  }
+
+  /* Restore the Process shadow word while retaining the restrained 01 → 06 cue. */
+  .page-process .process-hero:after{
+    content:'PROCESS'!important;
+    display:block!important;
+    position:absolute!important;
+    right:-.025em!important;
+    bottom:-.30em!important;
+    font:400 clamp(9rem,18vw,18rem)/1 Georgia,'Times New Roman',serif!important;
+    color:rgba(32,41,35,.04)!important;
+    pointer-events:none!important;
+    z-index:0!important;
+  }
+  .page-process .process-hero>.wrap{position:relative;z-index:1}
+
+  /* Pricing needs a clearly visible tonal hand-off into the package section. */
+  .page-pricing .packages-section{
+    background:#ddd1bf!important;
+    border-top:1px solid rgba(181,142,88,.24)!important;
+  }
+}
