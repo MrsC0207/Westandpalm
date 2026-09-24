@@ -593,3 +593,10 @@
 
 /* V9: Pricing hero separation only. Keep restored hero geometry untouched. */
 .page-pricing .packages-section{background:#ded4c5!important}
+
+/* V1.9.9 — public studio email + direct contact option */
+.footer-email{display:inline-block;margin-top:5px;color:#747970;text-decoration:none;font:400 .78rem/1.4 Arial,Helvetica,sans-serif}
+.footer-email:hover{color:var(--sand)}
+.contact-direct-email{margin-top:18px;font-size:.92rem}
+.contact-direct-email a{color:var(--forest);text-decoration:none;border-bottom:1px solid rgba(32,41,35,.28)}
+.contact-direct-email a:hover{color:var(--sand);border-bottom-color:var(--sand)}
